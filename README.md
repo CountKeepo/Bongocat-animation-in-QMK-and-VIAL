@@ -42,3 +42,7 @@ oled_rotation_t oled_init_user(oled_rotation_t rotation) {
     else return OLED_ROTATION_270;
 }
 ```
+
+## Shoutout section
+Huge thanks to Migii for helping me with all and any issues. 
+I will follow this post up with a tutorial on how to get a trackpoint module to work with any QMK keyboard!
