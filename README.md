@@ -2,6 +2,8 @@
 
 ![image](https://user-images.githubusercontent.com/64993772/194180420-2b6859c4-54dd-4eb3-a3be-3f8097f9c58e.png)
 
+**DISCLAIMER - I did not make the bongocat animation files, I found them somewhere and just made them work on my firmware.**
+
 ## I'm lazy, what do I do?
 
 You are in luck, in the folder [**Ready made hex files**](https://github.com/CountKeepo/Bongocat-animation-in-QMK-and-VIAL/tree/main/Ready%20made%20HEX%20files) I have included ready hex files for both the CRKBD (Corne) and Lily58 with VIAL support.
@@ -45,4 +47,13 @@ oled_rotation_t oled_init_user(oled_rotation_t rotation) {
 
 ## Shoutout section
 Huge thanks to Migii for helping me with all and any issues. 
+
+I can't remember where I exactly got the files for the bongocat itself, I vaguely remember finding it on reddit. 
+Anyhow, heres a few similar projects that I looked at while making the first iterations of my firmwares:
+
+https://www.reddit.com/r/olkb/comments/h00a8b/i_made_an_oled_animation_of_bongo_cat_that/
+https://github.com/Rwarcards762/lily58_bongocat
+
+**All credit to them for the bongocat, the animation is in no part my own!**
+
 I will follow this post up with a tutorial on how to get a trackpoint module to work with any QMK keyboard!
