@@ -88,6 +88,7 @@ I can't remember where I exactly got the files for the bongocat itself, I vaguel
 Anyhow, heres a few similar projects that I looked at while making the first iterations of my firmwares:
 
 https://www.reddit.com/r/olkb/comments/h00a8b/i_made_an_oled_animation_of_bongo_cat_that/
+
 https://github.com/Rwarcards762/lily58_bongocat
 
 **All credit to them for the bongocat, the animation is in no part my own!**
