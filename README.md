@@ -45,6 +45,42 @@ oled_rotation_t oled_init_user(oled_rotation_t rotation) {
 }
 ```
 
+If you want to swap the locations of the different text elements of the "master" screen, you can swap the locations of ```Layer indicator``` and ```WPM``` around:
+
+```
+static void render_status(void) {
+
+    // Layer indicator
+    oled_write_P(PSTR("LAYER"), false);
+    oled_write_P(PSTR("      \n"), false);
+    switch (get_highest_layer(layer_state)) {
+        case 2:
+        oled_write_P(PSTR("RAISE"), false);
+        break;
+    // Layer 1
+        case 1:
+            oled_write_P(PSTR("LOWER"), false);
+            break;
+        // Layer 0
+        default:
+            oled_write_P(PSTR("BASE "), false);
+            break;
+    }
+    
+    // WPM
+    oled_write_P(PSTR("      "), false);
+    oled_write_P(PSTR("    "), false);
+    sprintf(wpm_str, "%03d", get_current_wpm());
+    oled_write(wpm_str, false);
+    oled_write_P(PSTR("  WPM \n \n"), false);
+    oled_write_P(PSTR("      \n"), false);
+
+}
+
+```
+
+This will result in the left screen having the Layer indicator on top, and the WPM indicator on the bottom.
+
 ## Shoutout section
 Huge thanks to Migii for helping me with all and any issues. 
 
